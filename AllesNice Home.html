@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <!--Sinlose Animation Start-->
+<style>
+    
+    
+    #myContainer {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+    
+    #myAnimation {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+</style>
+
+<body>
+
+    <p>
+        <button onclick="myMove()">Klick mich!</button>
+    </p>
+
+    <div id="myContainer">
+        <div id="myAnimation"></div>
+    </div>
+
+    <script>
+        function myMove() {
+            var elem = document.getElementById("myAnimation");
+            var pos = 0;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+    </script>
+    <!--  Sinlose Animation Ende
+-->
+
+    <head>
+        <title>AllesNice</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Blog">
+        <meta name="keywords" content="Blog,Videos,chat,Schulhilfe">
+        <meta name="author" content="Janne Dvorak,Neven Besterman">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+
+        <link href="home.css" type="text/css" rel="stylesheet" />
+
+    </head>
+    
+    <body>
+        <h1>Herzlich wilkommen auf AllesNice</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
